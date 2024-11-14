@@ -31,8 +31,8 @@ export default function Form() {
     return (
       <div className='p-5 col-span-3'>
           <form onSubmit={handleSubmit} className='bg-white border-solid rounded-xl	 border-4 p-2 border-sky-500 flex-auto flex flex-col space-y-6'>
-              <h1 className='text-xl font-semibold mb-4'>General</h1>
-              <label htmlFor="name" className='text-sm font-medium'>Name</label>
+              <h1 className='text-xl font-semibold'>General</h1>
+              <label htmlFor="name" className=''>Name</label>
               <input 
                 id='name' 
                 type="text" 
@@ -41,7 +41,7 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="email" className='text-sm font-medium'>Email</label>
+              <label htmlFor="email" className=''>Email</label>
               <input 
                 id='email' 
                 type="email" 
@@ -50,7 +50,7 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="phone" className='text-sm font-medium'>Phone</label>
+              <label htmlFor="phone" className=''>Phone</label>
               <input 
                 type="text" 
                 id="phone" 
@@ -61,7 +61,7 @@ export default function Form() {
               
               <h1 className='text-xl font-semibold mt-6 mb-4'>Education</h1>
               
-              <label htmlFor="degree" className='text-sm font-medium'>Degree</label>
+              <label htmlFor="degree" className=''>Degree</label>
               <input 
                 id='degree' 
                 type="text" 
@@ -70,7 +70,7 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="university" className='text-sm font-medium'>University</label>
+              <label htmlFor="university" className=''>University</label>
               <input 
                 id='university' 
                 type="text" 
@@ -79,7 +79,7 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="grad-year" className='text-sm font-medium'>Graduation Year</label>
+              <label htmlFor="grad-year" className=''>Graduation Year</label>
               <input 
                 id='gradYear' 
                 type="text" 
@@ -91,7 +91,7 @@ export default function Form() {
            
               <h1 className='text-xl font-semibold mt-6 mb-4'>Professional Experience</h1>
               
-              <label htmlFor="job-title" className='text-sm font-medium'>Job Title</label>
+              <label htmlFor="job-title" className=''>Job Title</label>
               <input 
                 id='jobTitle' 
                 type="text" 
@@ -100,7 +100,7 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="company" className='text-sm font-medium'>Company</label>
+              <label htmlFor="company" className=''>Company</label>
               <input 
                 id='company' 
                 type="text" 
@@ -109,7 +109,7 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="dates-employment" className='text-sm font-medium'>Dates of Employment</label>
+              <label htmlFor="dates-employment" className=''>Dates of Employment</label>
               <input 
                 id='employmentDates' 
                 type="text" 
@@ -120,7 +120,7 @@ export default function Form() {
               
               <h1 className='text-xl font-semibold mt-6 mb-4'>Skills / Other</h1>
               
-              <label htmlFor="skills" className='text-sm font-medium'>Skills (optional)</label>
+              <label htmlFor="skills" className=''>Skills (optional)</label>
               <input 
                 id='skills' 
                 type="text" 
