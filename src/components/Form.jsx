@@ -52,7 +52,7 @@ export default function Form() {
               
               <label htmlFor="phone" className=''>Phone</label>
               <input 
-                type="text" 
+                type="number" 
                 id="phone" 
                 value={formData.phone}
                 onChange= {handleChange}
@@ -82,7 +82,7 @@ export default function Form() {
               <label htmlFor="grad-year" className=''>Graduation Year</label>
               <input 
                 id='gradYear' 
-                type="text" 
+                type="number" 
                 value={formData.gradYear}
                 onChange={handleChange}
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
@@ -109,10 +109,10 @@ export default function Form() {
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
               
-              <label htmlFor="dates-employment" className=''>Dates of Employment</label>
+              <label htmlFor="dates-employment" className=''>Years of Employment</label>
               <input 
                 id='employmentDates' 
-                type="text" 
+                type="number" 
                 value={formData.employmentDates}
                 onChange={handleChange}
                 className='border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
