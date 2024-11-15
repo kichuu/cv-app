@@ -9,6 +9,7 @@ export default function Home() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    address : "",
     phone: "",
     degree: "",
     university: "",

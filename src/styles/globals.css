@@ -112,3 +112,14 @@ h2{
   font-weight: bolder;
   font-family: sans-serif;
 }
+
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: #171717;
+}
+
+h1{
+  font-size: 24px;
+}
