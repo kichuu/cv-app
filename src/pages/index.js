@@ -1,18 +1,31 @@
-import Body from "@/components/Body"
-import Form from "@/components/Form"
-import Header from "@/components/Header"
-import ResumePreview from "@/components/ResumePreview"
-
+import Body from "@/components/Body";
+import Form from "@/components/Form";
+import Header from "@/components/Header";
+import ResumePreview from "@/components/ResumePreview";
+import { useState } from "react";
 
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    degree: "",
+    university: "",
+    gradYear: "",
+    jobTitle: "",
+    company: "",
+    employmentDates: "",
+    skills: "",
+  });
+
   return (
     <>
-    <Header/>
-    <Body>
-    <Form/>
-    <ResumePreview/>
-    </Body>
+      <Header />
+      <Body>
+        <Form formData={formData} setFormData={setFormData} />
+        <ResumePreview formData={formData} />
+      </Body>
     </>
-  )
+  );
 }

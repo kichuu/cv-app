@@ -27,12 +27,13 @@ body {
 }
 
 form {
+  color: #171717;
   font-family: sans-serif;
   font-weight: bold;
   max-width: 500px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: var(--background);
+  background-color: black;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -45,7 +46,7 @@ textarea {
   border-radius: 8px;
   border: 1px solid #D3D3D3;
   background-color: var(--light-grey);
-  color: var(--foreground);
+  color: var[--foreground];
   font-size: 1rem;
 }
 
@@ -103,4 +104,11 @@ textarea::placeholder {
   button {
     padding: 0.75rem;
   }
+}
+
+h2{
+  color:  #171717;
+  font-size: large;
+  font-weight: bolder;
+  font-family: sans-serif;
 }

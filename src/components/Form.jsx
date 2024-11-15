@@ -1,19 +1,6 @@
 import React, { useState } from "react";
-export default function Form() {
+export default function Form({formData , setFormData}) {
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        degree: "",
-        university: "",
-        gradYear: "",
-        jobTitle: "",
-        company: "",
-        employmentDates: "",
-        skills: "",
-    });
-    
     const handleChange= (e) => {
         const {id , value} = e.target
         setFormData((prevstate) => ({
@@ -25,6 +12,8 @@ export default function Form() {
     const handleSubmit= (e)=>{
         e.preventDefault()
         console.log(formData)
+        let data = formData
+
     }
     
 
@@ -136,7 +125,10 @@ export default function Form() {
             </button>
             </div>
           </form>
+
       </div>
+
+
     )
   }
   
