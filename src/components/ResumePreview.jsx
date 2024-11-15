@@ -9,7 +9,7 @@ import { GiSkills } from "react-icons/gi";
 // import { UisEnvelope } from '@iconscout/react-unicons-solid'
 export default function ResumePreview({ formData }) {
   return (
-    <div className=" col-span-4 grid grid-cols-8 m-5 my-10 border-sky-500 border border-4 rounded-md">
+    <div className=" col-span-4 grid grid-cols-8 m-5 my-10 max-h-[130vh]	 border-sky-500  border-4 rounded-md">
       <div className="bg-sky-600 col-span-3 py-10">
         {/*left side container*/}
         <div className="flex justify-center">
@@ -47,7 +47,15 @@ export default function ResumePreview({ formData }) {
         <h1 className='text-center tracking-widest my-4 font-bold '>SKILLS</h1>
         <div className="flex items-center  mt-4">
           <GiSkills  color="black" className="m-2" />
-          <p>{formData.email}</p>
+          <p>{formData.skill1}</p>
+        </div>
+        <div className="flex items-center  mt-4">
+          <GiSkills  color="black" className="m-2" />
+          <p>{formData.skill2}</p>
+        </div>
+        <div className="flex items-center  mt-4">
+          <GiSkills  color="black" className="m-2" />
+          <p>{formData.skill3}</p>
         </div>
       </div>
 

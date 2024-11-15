@@ -17,7 +17,9 @@ export default function Home() {
     jobTitle: "",
     company: "",
     employmentDates: "",
-    skills: "",
+    skill1: "",
+    skill2: "",
+    skill3: "",
   });
 
   return (

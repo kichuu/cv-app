@@ -139,16 +139,39 @@ export default function Form({ formData, setFormData }) {
 
         <h1 className="text-xl font-semibold mt-6 mb-4">Skills / Other</h1>
 
-        <label htmlFor="skills" className="">
-          Skills (optional)
+        <label htmlFor="skill1" className="">
+          Skill 1
         </label>
         <input
-          id="skills"
+          id="skill1"
           type="text"
           value={formData.skills}
           onChange={handleChange}
           className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+
+<label htmlFor="skill2" className="">
+          Skill 2 
+        </label>
+        <input
+          id="skill2"
+          type="text"
+          value={formData.skills}
+          onChange={handleChange}
+          className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+<label htmlFor="skill3" className="">
+          Skill 3
+        </label>
+        <input
+          id="skill3"
+          type="text"
+          value={formData.skills}
+          onChange={handleChange}
+          className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
         <div className="flex justify-center">
           <button
             type="submit"
