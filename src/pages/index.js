@@ -20,6 +20,7 @@ export default function Home() {
     skill1: "",
     skill2: "",
     skill3: "",
+    aboutSelf : ""
   });
 
   return (

@@ -1,11 +1,9 @@
 import React from "react";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaUserGraduate } from "react-icons/fa";
+import { FaDotCircle, FaUserGraduate } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { GiSkills } from "react-icons/gi";
-
-
 // import { UisEnvelope } from '@iconscout/react-unicons-solid'
 export default function ResumePreview({ formData }) {
   return (
@@ -59,9 +57,44 @@ export default function ResumePreview({ formData }) {
         </div>
       </div>
 
-      <div className="bg-white col-span-5"></div>
-
-      {/*right side container*/}
+      <div className="bg-white grid grid-rows-8 col-span-5"> {/*right side container*/}
+      <div className="name-header bg-[#171717] row-span-2  flex justify-center items-center border rounded border-[#171717]">
+      <h1 className="text-white myname text-center tracking-wider">{formData.name}</h1>
+      
+      </div>
+      <div className="row-span-2">
+       <h1 className="  font-bold tracking-widest text-center my-4 ">
+          Work Experience
+        </h1>
+        <div className="flex items-center">
+          <GoDotFill color="black" className="m-2" />
+          <div className="ml-2">
+            <p>{formData.jobTitle}</p>
+          </div>
+        </div>
+        <div className="flex items-center">
+          <GoDotFill color="black" className="m-2" />
+          <div className="ml-2">
+            <p>{formData.company}</p>
+          </div>
+        </div>
+        <div className="flex items-center">
+          <GoDotFill color="black" className="m-2" />
+          <div className="ml-2">
+            <p>{formData.employmentDates}</p>
+          </div>
+        </div>
+        </div>
+        <div className="row-span-3">
+        <h1 className="font-bold tracking-widest text-center my-4">
+          About Myself
+        </h1>
+        <p className="m-4 text-xl">{formData.aboutSelf}</p>
+        </div>
+      </div>
+      
+     
+        
     </div>
   );
 }

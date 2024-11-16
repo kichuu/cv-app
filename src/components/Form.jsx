@@ -172,6 +172,17 @@ export default function Form({ formData, setFormData }) {
           className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
+<label htmlFor="aboutSelf" className="">
+          About Myself
+        </label>
+        <input
+          id="aboutSelf"
+          type="text"
+          value={formData.aboutSelf}
+          onChange={handleChange}
+          className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
         <div className="flex justify-center">
           <button
             type="submit"
