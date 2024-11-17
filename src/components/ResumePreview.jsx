@@ -17,7 +17,7 @@ function submithandle(){
   return (
     <>
     <div className="col-span-4 flex flex-col ">
-    <div ref={resumePrev} className=" col-span-4 grid grid-cols-8 m-5 my-10 max-h-[130vh]	 border-sky-500  border-4 rounded-md">
+    <div ref={resumePrev} className=" col-span-4 grid grid-cols-8 m-5 my-10 max-h-auto	 border-sky-500  border-4 rounded-md">
       <div className="bg-sky-600 col-span-3 py-10">
         {/*left side container*/}
         <div className="flex justify-center">

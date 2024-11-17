@@ -22,7 +22,7 @@ export default function Form({ formData, setFormData , downloadPdf }) {
     <div className="p-5 col-span-3">
       <form
         onSubmit={handleSubmit}
-        className="bg-white border-solid rounded-xl	 border-4 p-2 border-sky-500 flex-auto flex flex-col space-y-6"
+        className="bg-white border-solid rounded-xl	 border-4 p-2 border-sky-500  flex flex-col flex-1 space-y-6"
       >
         <h1 className="text-xl font-semibold">General</h1>
         <label htmlFor="name" className="">
