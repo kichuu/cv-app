@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-export default function Form({ formData, setFormData }) {
+import { downloadPdf } from "@/utils/ToPdf";
+import React, { useState , useRef } from "react";
+
+export default function Form({ formData, setFormData , downloadPdf }) {
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevstate) => ({
@@ -8,13 +10,15 @@ export default function Form({ formData, setFormData }) {
     }));
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    downloadPdf()
     console.log(formData);
-    let data = formData;
   };
 
   return (
+    <>
     <div className="p-5 col-span-3">
       <form
         onSubmit={handleSubmit}
@@ -183,15 +187,18 @@ export default function Form({ formData, setFormData }) {
           className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button
             type="submit"
             className="mt-6 bg-[#FF6F61] text-white py-2 px-4 rounded-md max-w-28	 hover:bg-[#e55a4a] focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             Submit
           </button>
-        </div>
+        </div> */}
       </form>
+      
     </div>
+
+    </>
   );
 }

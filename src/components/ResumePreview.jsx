@@ -1,13 +1,23 @@
-import React from "react";
+import  { useRef } from "react";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaDotCircle, FaUserGraduate } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { GiSkills } from "react-icons/gi";
-// import { UisEnvelope } from '@iconscout/react-unicons-solid'
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+import { downloadPdf } from "@/utils/ToPdf";
+
 export default function ResumePreview({ formData }) {
+  const resumePrev = useRef()
+function submithandle(){
+  downloadPdf(resumePrev)
+}
+
   return (
-    <div className=" col-span-4 grid grid-cols-8 m-5 my-10 max-h-[130vh]	 border-sky-500  border-4 rounded-md">
+    <>
+    <div className="col-span-4 flex flex-col ">
+    <div ref={resumePrev} className=" col-span-4 grid grid-cols-8 m-5 my-10 max-h-[130vh]	 border-sky-500  border-4 rounded-md">
       <div className="bg-sky-600 col-span-3 py-10">
         {/*left side container*/}
         <div className="flex justify-center">
@@ -93,8 +103,12 @@ export default function ResumePreview({ formData }) {
         </div>
       </div>
       
-     
-        
     </div>
+    <div className="col-span-4 flex flex-col justify-center items-center">
+
+       <button onClick={submithandle} className="max-w-28	content-center">submit</button>
+       </div>
+    </div>
+    </>
   );
 }
